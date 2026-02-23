@@ -75,44 +75,6 @@ client.get_session_id();     // Get current session ID
 client.get_sequence_number(); // Get current sequence number
 ```
 
-### Live Testing
-
-Create a Discord bot and test with real events:
-
-1. **Create a Discord Application:**
-   - Go to https://discord.com/developers/applications
-   - Click "New Application"
-   - Navigate to "Bot" section
-   - Click "Add Bot"
-   - Copy your bot token
-   - Enable **MESSAGE CONTENT INTENT** (required to read message content)
-
-2. **Invite the bot to a server:**
-   - Go to OAuth2 → URL Generator
-   - Select scopes: `bot`
-   - Select permissions: `Read Messages`, `Send Messages`
-   - Copy and open the generated URL
-   - Select a server and authorize
-
-3. **Run the example:**
-
-```bash
-BOT_TOKEN=your_token_here bun run examples/usage.ts
-```
-
-Or use a `.env` file:
-
-```bash
-echo "BOT_TOKEN=your_token_here" > .env
-bun run examples/usage.ts
-```
-
-4. **Test it:**
-   - Send messages in your Discord server
-   - Edit messages
-   - Delete messages
-   - Watch the console output
-
 ## TypeScript Support
 
 All Discord Gateway types are exported:
