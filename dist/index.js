@@ -1,0 +1,3 @@
+// Main exports
+export { DiscordClient } from './client';
+export { GATEWAY_URL, GATEWAY_VERSION, API_VERSION, GatewayOpcode, GatewayCloseCode, GatewayIntent, DEFAULT_INTENTS, INITIAL_RECONNECT_DELAY, MAX_RECONNECT_DELAY, MAX_RECONNECT_JITTER, RESUME_TIMEOUT, HEARTBEAT_TIMEOUT, IDENTIFY_RATE_LIMIT, MAX_IDENTIFIES_PER_WINDOW, MessageType, } from './constants';
