@@ -84,5 +84,3 @@ export {
   MAX_IDENTIFIES_PER_WINDOW,
   MessageType,
 } from './constants';
-
-export const VERSION = '1.0.0';
