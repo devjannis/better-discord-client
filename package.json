@@ -1,5 +1,5 @@
 {
-  "name": "better-discord-client",
+  "name": "@bttr/better-discord-client",
   "version": "1.0.0",
   "description": "A lightweight Discord Gateway client focused on message handling",
   "module": "dist/index.js",
@@ -31,5 +31,8 @@
     "bot",
     "client"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
 }
