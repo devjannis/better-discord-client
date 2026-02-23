@@ -17,7 +17,8 @@
   "scripts": {
     "build": "bun build ./src/index.ts --outdir ./dist --target node && tsc -p tsconfig.build.json",
     "test": "bun test",
-    "prepublishOnly": "bun run build"
+    "prepublishOnly": "bun run build",
+    "prepare": "bun run build"
   },
   "devDependencies": {
     "@types/bun": "latest",
