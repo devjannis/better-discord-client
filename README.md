@@ -1,15 +1,6 @@
 # better-discord-client
 
-A lightweight Discord Gateway client focused on message handling with auto-reconnect, session resume, and full TypeScript support.
-
-## Features
-
-- **Lightweight** - Minimal dependencies, focused on Gateway events
-- **Auto-reconnect** - Exponential backoff with jitter for reliable connections
-- **Session Resume** - Resume missed events after disconnections
-- **Full Types** - Complete TypeScript definitions for all Discord Gateway events
-- **Rate Limiting** - Built-in protection against Gateway rate limits
-- **Message Focus** - Optimized for handling messages (create, update, delete)
+A lightweight Discord Gateway client focused on message handling.
 
 ## Installation
 
@@ -73,26 +64,6 @@ client.disconnect();         // Clean disconnect
 client.is_connected();       // Check connection status
 client.get_session_id();     // Get current session ID
 client.get_sequence_number(); // Get current sequence number
-```
-
-## TypeScript Support
-
-All Discord Gateway types are exported:
-
-```typescript
-import type { Message, User, Guild, Channel } from "better-discord-client";
-```
-
-## Error Handling
-
-```typescript
-client.on_error((error) => {
-  console.error("Gateway error:", error);
-});
-
-client.on_disconnect((code, reason) => {
-  console.log(`Disconnected: ${code} - ${reason}`);
-});
 ```
 
 ## License
