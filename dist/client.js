@@ -1,5 +1,5 @@
 import { GatewayManager } from './gateway';
-import { GatewayIntent, DEFAULT_INTENTS } from './constants';
+import { DEFAULT_INTENTS } from './constants';
 export { GatewayIntent, GatewayOpcode, GatewayCloseCode } from './constants';
 /**
  * A Discord Gateway client focused on message handling.

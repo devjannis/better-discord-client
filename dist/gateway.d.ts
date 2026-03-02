@@ -32,6 +32,7 @@ export declare class GatewayManager {
     onReady(handler: ReadyHandler): void;
     onError(handler: ErrorHandler): void;
     onDisconnect(handler: DisconnectHandler): void;
+    private connectResolve;
     connect(): Promise<void>;
     disconnect(): void;
     private handleMessage;

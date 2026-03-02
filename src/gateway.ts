@@ -74,15 +74,15 @@ export class GatewayManager {
   
   // Heartbeat
   private heartbeatInterval: number | null = null;
-  private heartbeatTimer: Timer | null = null;
+  private heartbeatTimer: ReturnType<typeof setInterval> | null = null;
   private lastHeartbeatAck = true;
-  private heartbeatTimeoutTimer: Timer | null = null;
-  
+  private heartbeatTimeoutTimer: ReturnType<typeof setTimeout> | null = null;
+
   // Reconnection
   private reconnectAttempts = 0;
   private reconnectDelay = INITIAL_RECONNECT_DELAY;
   private shouldResume = false;
-  private reconnectTimer: Timer | null = null;
+  private reconnectTimer: ReturnType<typeof setTimeout> | null = null;
   
   // Rate limiting
   private identifyTimestamps: number[] = [];
